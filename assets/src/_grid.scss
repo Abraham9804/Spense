@@ -1,0 +1,11 @@
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px repeat(5, auto);
+    grid-template-areas: "header header header header"
+                         "hero hero hero hero"
+                         "platforms platforms platforms platforms"
+                         "escrow escrow escrow escrow"
+                         "text-editor text-editor text-editor text-editor"
+                         "footer footer footer footer";
+}

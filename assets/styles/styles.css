@@ -1,7 +1,102 @@
 header {
-  background-color: whitesmoke;
+  display: none;
 }
 
+/*HEADER
+
+header{
+    grid-area: header;
+    @include center-flex;
+    background-color: $main-color;
+
+    .container{
+        @include center-flex;
+    }
+
+    a{
+        font-weight: 500;
+    }
+}
+
+
+.logo{
+    width: 40%;
+
+    p{
+        font-weight: 500;
+    }
+}
+
+.menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button{
+        @include btn();
+    }
+}
+
+nav{
+    display: inline-block;
+    ul{
+        display: flex;
+    }
+}*/
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px repeat(5, auto);
+  grid-template-areas: "header header header header" "hero hero hero hero" "platforms platforms platforms platforms" "escrow escrow escrow escrow" "text-editor text-editor text-editor text-editor" "footer footer footer footer";
+}
+
+header {
+  display: none;
+}
+
+/*HEADER
+
+header{
+    grid-area: header;
+    @include center-flex;
+    background-color: $main-color;
+
+    .container{
+        @include center-flex;
+    }
+
+    a{
+        font-weight: 500;
+    }
+}
+
+
+.logo{
+    width: 40%;
+
+    p{
+        font-weight: 500;
+    }
+}
+
+.menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button{
+        @include btn();
+    }
+}
+
+nav{
+    display: inline-block;
+    ul{
+        display: flex;
+    }
+}*/
 * {
   padding: 0;
   margin: 0;
@@ -37,6 +132,10 @@ a {
     color: white;
     border-radius: 5px;
 }*/
+main {
+  grid-area: hero;
+  background-color: whitesmoke;
+}
 main .container {
   display: flex;
   align-items: center;
@@ -77,6 +176,7 @@ main .container .description form {
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
+  padding-bottom: 40px;
 }
 main .container .description form input[type=email] {
   width: 55%;
@@ -103,19 +203,148 @@ main .container .description form input[type=submit] {
 .platforms {
   grid-area: platforms;
 }
-.platforms .container-sn {
+.platforms .container {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
   width: 90%;
   margin: 50px auto;
 }
-.platforms .container-sn article {
-  width: 10%;
-}
-.platforms .container-sn article img {
+.platforms .container .platforms-mobile {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.platforms .container .platforms-mobile img {
+  width: 30%;
+}
+.platforms .container .platforms-tablet {
+  display: none;
+}
+.platforms .container .platforms-desktop {
+  display: none;
+}
+
+.escrow {
+  grid-area: escrow;
+}
+.escrow .container {
+  background-color: whitesmoke;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.escrow .container .text-escrow {
+  width: 90%;
+}
+.escrow .container .text-escrow h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 35px 20px 10px 20px;
+}
+.escrow .container .text-escrow p {
+  font-size: 19px;
+  font-weight: 300;
+  color: gray;
+  line-height: 30px;
+  padding: 10px 10px;
+}
+.escrow .container .img-mobile {
+  width: 100%;
+}
+.escrow .container .img-mobile img {
+  width: 100%;
+}
+.escrow .container .img-tablet {
+  display: none;
+}
+.escrow .container .img-desktop {
+  display: none;
+}
+
+.text-editor {
+  grid-area: text-editor;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.text-editor .container {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.text-editor .container .editor-descrip {
+  width: 100%;
+  padding: 0px 0px;
+}
+.text-editor .container .editor-descrip h2 {
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.text-editor .container .editor-descrip p {
+  font-size: 19px;
+  font-weight: 300;
+  color: gray;
+  line-height: 30px;
+}
+.text-editor .container .img-editor {
+  width: 100%;
+}
+.text-editor .container .img-editor img {
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .container .footer-description {
+  width: 100%;
+}
+footer .container .footer-description .title {
+  font-size: 23px;
+  font-weight: 500;
+  color: white;
+}
+footer .container .footer-description p {
+  color: gray;
+  font-size: 19px;
+  font-weight: 300;
+  color: gray;
+  line-height: 30px;
+}
+footer .container .links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .container .links div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+footer .container .links div h3 {
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+}
+footer .container .links div a {
+  font-size: 21px;
+  font-weight: 400;
+  color: gray;
+  padding: 10px 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */

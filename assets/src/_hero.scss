@@ -1,4 +1,6 @@
 main{
+    grid-area: hero;
+    background-color: whitesmoke;
     .container{
       @include center-flex;
 
@@ -41,6 +43,7 @@ main{
       flex-direction: row;
       justify-content: space-between;
       width: 90%;
+      padding-bottom: 40px;
         input[type=email]{
             width: 55%;
             padding: 5px 5px;

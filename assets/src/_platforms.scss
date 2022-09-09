@@ -1,20 +1,28 @@
 .platforms{
     grid-area: platforms;
 
-    .container-sn{
+    .container{
         @include center-flex;
         flex-direction: row;
-        justify-content: space-between;
         width: 90%;
         margin:50px auto;
 
-        article{
-            width: 10%;
-            
-
+       .platforms-mobile{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             img{
-                width: 100%;
+                width: 30%;
             }
+        }
+
+        .platforms-tablet{
+            display: none;
+        }
+
+        .platforms-desktop{
+            display: none;
         }
     }
 }

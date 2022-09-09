@@ -1,3 +1,46 @@
 header{
-    background-color: $main-color;
+    display: none;
 }
+/*HEADER
+
+header{
+    grid-area: header;
+    @include center-flex;
+    background-color: $main-color;
+
+    .container{
+        @include center-flex;
+    }
+
+    a{
+        font-weight: 500;
+    }
+}
+
+
+.logo{
+    width: 40%;
+
+    p{
+        font-weight: 500;
+    }
+}
+
+.menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button{
+        @include btn();
+    }
+}
+
+nav{
+    display: inline-block;
+    ul{
+        display: flex;
+    }
+}*/
+

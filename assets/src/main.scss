@@ -18,8 +18,12 @@
 
 $main-color: whitesmoke;
 
-
+@import "header";
+@import "grid";
 @import "header";
 @import "utils";
 @import "hero";
 @import "platforms";
+@import "scrow";
+@import "txt-editor";
+@import "footer";

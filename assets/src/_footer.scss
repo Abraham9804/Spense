@@ -1,0 +1,53 @@
+footer{
+    grid-area: footer;
+    background-color: black;
+
+    
+   
+    
+
+    .container{
+        @include center-flex;
+        padding-top:60px;
+        padding-bottom: 80px;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .footer-description{
+            width: 100%;
+            
+            .title{
+                @include font-properties(23px, 500, white);
+            }
+
+            p{
+                color: gray;
+                @include font-properties(19px, 300, gray);
+                line-height:30px;
+               
+            }
+        }
+
+        .links{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            div{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                h3{
+                    @include font-properties(23px, 600, white);
+                }
+
+                a{
+                    @include font-properties(21px, 400, gray);
+                    padding: 10px 0px;
+                }
+            }
+            
+        }
+    }
+}
