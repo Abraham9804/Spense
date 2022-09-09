@@ -1,0 +1,121 @@
+header {
+  background-color: whitesmoke;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/*
+.btn-login{
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}*/
+main .container {
+  display: flex;
+  align-items: center;
+}
+main .container .hero-img {
+  width: 100%;
+  padding: 40px 0px;
+}
+main .container .hero-img img {
+  width: 100%;
+}
+main .container .description h1 {
+  font-size: 35px;
+}
+main .container .description p {
+  line-height: 25px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #636363;
+}
+main .container .description ul {
+  padding: 20px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #636363;
+}
+main .container .description ul li {
+  margin-bottom: 8px;
+}
+main .container .description ul i {
+  padding-right: 10px;
+  font-size: 25px;
+  color: black;
+}
+main .container .description form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+main .container .description form input[type=email] {
+  width: 55%;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: #ADABAB 1px solid;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #BFBDBD;
+  text-align: center;
+}
+main .container .description form input[type=submit] {
+  width: 40%;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.platforms {
+  grid-area: platforms;
+}
+.platforms .container-sn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto;
+}
+.platforms .container-sn article {
+  width: 10%;
+}
+.platforms .container-sn article img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

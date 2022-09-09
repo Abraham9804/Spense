@@ -1,0 +1,25 @@
+@mixin center-flex{
+    display: flex;
+    align-items: center;
+}
+
+@mixin font-properties($size, $weight, $color){
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin btn($background: black, $bord-radius: 5px , $color:white, $padding: 15px 10px){
+    background-color: $background;
+    border-radius: $bord-radius;
+    color: $color;
+    padding: $padding;
+}
+
+$main-color: whitesmoke;
+
+
+@import "header";
+@import "utils";
+@import "hero";
+@import "platforms";

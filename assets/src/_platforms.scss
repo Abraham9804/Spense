@@ -1,0 +1,20 @@
+.platforms{
+    grid-area: platforms;
+
+    .container-sn{
+        @include center-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin:50px auto;
+
+        article{
+            width: 10%;
+            
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
